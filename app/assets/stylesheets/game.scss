@@ -1,0 +1,63 @@
+.table-board{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  table{
+    border: 2px;
+    box-sizing: border-box;
+    border-collapse: separate;
+    border-spacing: 8px 8px;
+
+    td{
+      font-size: 50px;
+      color: white;
+      background-color: rgba(0,0,0,.05);
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0px 0px 6px rgba(0,0,0,.3);
+      overflow: hidden;
+      position: relative;
+    }
+
+    td:hover{
+      box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+    }
+
+    .full{
+      width: 100px;
+      height: 100px;
+      box-sizing: border-box;
+      cursor: not-allowed;
+    }
+
+    .empty{
+      width: 100px;
+      height: 100px;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+
+    .X{
+      color: #FF4D48;
+    }
+
+    .O{
+      color:deepskyblue;
+    }
+  }
+
+}
+
+.winner{
+
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #BBBBBB;
+}
+
+

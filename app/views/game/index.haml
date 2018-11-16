@@ -1,0 +1,7 @@
+.winner
+.table-board
+  %table
+    - [0, 3, 6].each do |x|
+      %tr
+        - (1..3).each do |y|
+          %td{ id: (x + y).to_s, class: 'empty'}
